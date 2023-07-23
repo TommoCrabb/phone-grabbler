@@ -55,7 +55,7 @@ def log_(_url, _status):
     elif _status == False: _file = _fail_file
     else: raise Exception(f'Pass/Fail status must be a boolean.')
     with open(_file, "ta") as _f:
-        _f.write(_url)
+        _f.write(f"{_url}\n")
 
 def clear_logs_():
     '''Delete "pass/fail/links/etc" files found in current directory. 
