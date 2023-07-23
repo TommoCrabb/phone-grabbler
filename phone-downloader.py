@@ -9,8 +9,14 @@ this with my own custom podcast app. ... Eventually.
 The script is basically a wrapper around yt-dlp, and yt-dlp
 needs to be installed for it to work. 
 
-Run the program with the "-h" option for more information on how 
-everything works.
+Every time a download is attempted, the input used is written
+into a timestamped "pass" or "fail" file, depending on the 
+outcome of the operation. These files can become quite numerous 
+over a fairly short period of time. Run the script without any 
+arguments to blow away this detritus.
+
+Run the script with the "-h" option for more information on how 
+all the other bits and bobs work.
 '''
 
 from subprocess import run
